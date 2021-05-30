@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block body %} 
+
+<div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 100%), url(https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fd35d3c30-4da8-11e8-97e4-13afc22d86d4?fit=scale-down&source=next&width=700)">
+    <div class="container">
+      <h3 class="display-3">Web-based Application for Gender Detection , Mask Detection and Fake Human Face Generation.</h3>
+      <hr>
+      <p>This is the Final Year project curated by <b>Indrani Roy(16500317051) , Arijit Ghosh(16500317065) and Anirban Bej(16500317071)</b> 
+        <hr> 
+        This project makes use of the Deep Learning field to curate a modern multipurpose web-app. The entire project is done with the purpose of providing a real-world
+        application as well as depict a viving and friendly implementation. The creation of the Gender and the Mask detection system entirely resonates
+        the modern time which is suffocated with the curse of CoVID-19. Both of these projects are built with the help of Convolutional Neural Networks
+        on top of the famous Tensorflow framework. The Fake Human Face Generator model makes use of Generative Adversarial Networks and is built with the
+        help of Pytorch Framework. 
+        <hr>
+        <i>Hope you love it!</i>
+      </p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/mask" role="button"><i class="fas fa-head-side-mask"></i> Predict Mask-usage »</a>
+          <a class="btn btn-primary btn-lg" href="/gender" role="button"><i class="fas fa-venus-mars"></i> Predict Gender »</a>
+            <a class="btn btn-primary btn-lg" href="/face" role="button"><i class="fas fa-grin-stars"></i> Generate Human-faces »</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}

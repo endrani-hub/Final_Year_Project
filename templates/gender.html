@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Gender Detection
+{% endblock %}
+
+{% block body %} 
+
+<div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 100%), url(https://st2.depositphotos.com/26272052/42205/v/600/depositphotos_422053604-stock-video-glowing-neon-line-female-gender.jpg) ; height : 100%">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="bg text-center"></div>
+        <!--Div for Centered Text & Input-->
+        <div class="centered">
+            <p class="firstLine" style="font-size:50px ; text-align: center;"> C &nbsp; H &nbsp; E &nbsp; C &nbsp; K &nbsp; . &nbsp; G &nbsp; E &nbsp; N &nbsp; D&nbsp; E &nbsp; R </p>
+            <br>
+            <p class="secondLine" style="font-size:40px ; text-align: center;">Check Gender</p>
+            <br>
+            <br>
+        <form method='post' enctype='multipart/form-data' style="font-family:Arial;font-size:30px ; margin: 0 auto; width : 250px;">
+            <p style = "font-size:20px"><input type='file' name='image'></p>
+            <br>
+            <input type='submit' value='Upload' style="font-size:25px; background-color:coral; width : 250px;">
+            <br>
+            <br>
+        </form>
+        <h3 style = "text-align: center;">Prediction : {{pred}}</h3>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+  </div>
+{% endblock %}
